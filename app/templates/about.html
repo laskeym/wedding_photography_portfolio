@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="col-md-6 mx-auto text-center">
+      <img src="{{ url_for('static', filename='imgs/lexi.jpg') }}" alt="" class="img-fluid rounded-circle mb-3" id="about-lead">
+      <p class="lead">Hi, my name is Lexi!</p>
+
+
+      {% if request.path == '/about' %}
+        <p>ABOUT</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
