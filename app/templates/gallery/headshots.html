@@ -1,0 +1,16 @@
+{% extends "gallery/gallery.html" %}
+
+{% block photos %}
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/headshots/headshot01.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/headshots/headshot01.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/headshots/headshot02.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/headshots/headshot02.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/headshots/headshot03.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/headshots/headshot03.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/headshots/headshot04.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/headshots/headshot04.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+{% endblock %}

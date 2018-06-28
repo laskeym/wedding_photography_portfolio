@@ -1,11 +1,25 @@
 {% extends "gallery/gallery.html" %}
 
 {% block photos %}
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding01.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding02.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding03.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding04.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding05.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding06.jpg') }}" alt="">
-  <img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding07.jpg') }}" alt="">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding01.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding01.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding02.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding02.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding03.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding03.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding04.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding04.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding05.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding05.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding06.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding06.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+    <a href="{{ url_for('static', filename='imgs/gallery/wedding/wedding07.jpg') }}" class="image-link"><img src="{{ url_for('static', filename='imgs/gallery/wedding/wedding07.jpg') }}" alt="" class="img-fluid"><div class="overlay"></div></a> 
+  </div>
 {% endblock %}

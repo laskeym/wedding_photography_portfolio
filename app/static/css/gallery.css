@@ -1,0 +1,30 @@
+.grid-item {
+  padding: 0;
+}
+
+.image-link, .grid-item:hover {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F5F5F5;
+}
+
+.grid-item:hover .overlay {
+  opacity: .5;
+}

@@ -1,7 +1,8 @@
 from app import app
+from app.forms import ContactForm
 from ..emails import contact_submit
 
-from flask import render_template, abort
+from flask import render_template, abort, flash, url_for, redirect
 
 
 @app.route('/')
@@ -38,9 +39,16 @@ def gallery(gallery_type):
     abort(404)
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-  contact_submit('Mark', 'Laskey', 'laskey.mark@hotmail.com', '2018-07-04')
+  form = ContactForm()
 
-  return render_template('contact.html')
+  if form.validate_on_submit():
+    contact_submit(form.data['first_name'], form.data['last_name'], form.data['email'], form.data['date'])
+
+    url = url_for('contact')
+    flash('Thank you for sending an email.  We will get back to you soon.')
+    return redirect(url)
+
+  return render_template('contact.html', form=form)
 

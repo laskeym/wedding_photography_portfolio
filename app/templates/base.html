@@ -10,7 +10,7 @@
   <title>Lexi Springer Photography</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="{{ url_for('index') }}">LexiSpringerPhotography</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,11 @@
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a href="{{ url_for('gallery', gallery_type='wedding') }}" class="dropdown-item">Wedding</a>
-              <a href="#" class="dropdown-item">Themed</a>
-              <a href="#" class="dropdown-item">Headshots</a>
-              <a href="#" class="dropdown-item">Maternity</a>
-              <a href="#" class="dropdown-item">Birth</a>
-              <a href="#" class="dropdown-item">Family</a>
+              <a href="{{ url_for('gallery', gallery_type='themed') }}" class="dropdown-item">Themed</a>
+              <a href="{{ url_for('gallery', gallery_type='headshots') }}" class="dropdown-item">Headshots</a>
+              <a href="{{ url_for('gallery', gallery_type='maternity') }}" class="dropdown-item">Maternity</a>
+              <a href="{{ url_for('gallery', gallery_type='birth') }}" class="dropdown-item">Birth</a>
+              <a href="{{ url_for('gallery', gallery_type='family') }}" class="dropdown-item">Family</a>
             </div>
           </li>
           {% if request.path == '/contact' %}

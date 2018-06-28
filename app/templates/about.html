@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block body %}
-  <div class="container">
+  <div class="container my-5">
     <div class="col-md-6 mx-auto text-center">
-      <img src="{{ url_for('static', filename='imgs/lexi.jpg') }}" alt="" class="img-fluid rounded-circle mb-3" id="about-lead">
-      <p class="lead">Hi, my name is Lexi!</p>
-
-
-      {% if request.path == '/about' %}
-        <p>ABOUT</p>
-      {% endif %}
+      <img src="{{ url_for('static', filename='imgs/lexi.jpg') }}" alt="" class="img-fluid rounded-circle mb-5" id="about-lead">
+      
+      <p>Hey there!  My name is Alexis, but I typically go by "Lexi".  I am a mom of 2 beautiful children and a wife to an amazing man.  On top of being a professional photographer, I am also in the United States Air National Guard as a Medic.  I have a degreee in Practical Nursing and more medical certificates than I can count on my hands and toes.  I love the medical field, but I have finally found my passion and decided to pursue it.</p>
+      <br>
+      <p>I started photography in August of 2016.  It started off as a hobby until I realized how much I absolutely loved it.  I specialize in portraits of all types and cherish being able to capture beautiful moments and share everyone's story.  I am always up to a challenge and love to get creative.</p>
+      <br>
+      <p>Feel free to contact me anytime about any session you have in mind.  Let me tell YOUR story.</p>
     </div>
   </div>
 {% endblock %}

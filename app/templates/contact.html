@@ -1,27 +1,37 @@
 {% extends "base.html" %}
 
 {% block body %}
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-6 mx-auto">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-success text-center">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
         <form action="#" method="POST">
+          {{ form.hidden_tag() }}
+
           <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" class="form-control">
+            {{ form.first_name.label }}
+            {{ form.first_name(class='form-control') }}
           </div>
           <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" class="form-control">
+            {{ form.last_name.label }}
+            {{ form.last_name(class='form-control') }}
           </div>
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" class="form-control">
+            {{ form.email.label }}
+            {{ form.email(class='form-control') }}
+            <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date" class="form-control">
+            {{ form.date.label }}
+            {{ form.date(class='form-control') }}
           </div>
-          <button type="submit" class="btn btn-block btn-primary">Submit</button>
+          {{ form.submit(class='btn btn-success btn-block') }}
         </form>
       </div>
     </div>

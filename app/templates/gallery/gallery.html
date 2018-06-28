@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+{% endblock %}
+
 {% block body %}
 <div class="container-fluid">
   <div class="row grid">
-    <div class="grid-sizer col-sm-12 col-md-4"></div>
-    {% block photos %}{% endblock %}
+    <div class="grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
+  {% block photos %}{% endblock %}
   </div>
 </div>
 {% endblock %} 
+
+
+
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}
