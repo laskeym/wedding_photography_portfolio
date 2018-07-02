@@ -1,3 +1,73 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1001;
+}
+
+.carousel .carousel-item img {
+  height: 100vh;
+  filter: brightness(65%);
+}
+
 #index-lead {
-  height: 90vh;
+  padding: 0;
+}
+
+#index-lead-header {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+} 
+
+#index-lead-header h1 {
+  color: #fff;
+}
+
+#index-lead-next {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+i.fas {
+  color: #fff !important;
+  display: inline-block;
+  border-radius: 60px;
+  font-size: 18px;
+  box-shadow: 0px 0px 5px #fff;
+  padding: 0.5em 0.6em;
+  transition: .5s ease;
+}
+
+i.fas:hover {
+  color: #333 !important;
+  background-color: #fff;
+}
+
+#index-desc {
+  background-image: url("../imgs/bg_camera.jpg");
+  background-position: 100% 0; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  background-size: 300px 300px;
+}
+
+#featured-in {
+  padding: 100px 0;
+}
+
+#featured-in p {
+  font-size: 1.5em;
+}
+
+#testimonials {
+  padding: 50px 0;
+}
+
+#testimonials img {
+  border-radius: 50%;
 }
