@@ -39,6 +39,11 @@ def gallery(gallery_type):
     abort(404)
 
 
+@app.route('/pricing')
+def pricing():
+  return render_template('pricing.html')
+  
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
   form = ContactForm()
