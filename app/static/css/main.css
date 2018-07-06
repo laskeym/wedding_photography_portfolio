@@ -56,12 +56,9 @@ i.fas:hover {
   background-size: 300px 300px;
 }
 
-#featured-in {
+#index-desc {
+  height: 50vh;
   padding: 100px 0;
-}
-
-#featured-in p {
-  font-size: 1.5em;
 }
 
 #testimonials {

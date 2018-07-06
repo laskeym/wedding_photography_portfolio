@@ -37,16 +37,24 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
   <div id="index-desc">
-    <div class="row" id="featured-in">
+    <div class="row" id="featured-in-header">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto text-center">
         <h2 class="display-4">As Featured In:</h2>
-        <p>RetroLife Magazine</p>
+      </div>
+    </div>
+
+    <div class="row" id="featured-in-body">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mx-auto">
+        <img src="{{ url_for('static', filename='imgs/featured_in/retrolife.png') }}" alt="" class="img-fluid">
       </div>
     </div>
   
     <div class="row" id="testimonials">
+      <div class="col-12 mx-auto mb-4">
+        <h2 class="text-center">Testimonials</h2>
+      </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
         <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
         <h3>"I couldn't be any happier!"</h3>
