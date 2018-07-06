@@ -36,14 +36,28 @@ def gallery(gallery_type):
   elif gallery_type == 'family':
     return render_template('gallery/family.html')
   else:
-    abort(404)
+    return abort(404)
 
 
-@app.route('/pricing')
-def pricing():
-  return render_template('pricing.html')
+@app.route('/investments/<inv_type>')
+def investments(inv_type):
+  if inv_type == 'wedding':
+    return render_template('investments/wedding.html')  
+  elif inv_type == 'themed':
+    return render_template('investments/themed_sessions.html')
+  elif inv_type == 'maternity':
+    return render_template('investments/maternity.html')
+  elif inv_type == 'headshots':
+    return render_template('investments/headshots.html')
+  elif inv_type == 'family':
+    return render_template('investments/family.html')
+  elif inv_type == 'birth':
+    return render_template('investments/birth_photos.html')
+  elif inv_type == 'boudoir':
+    return render_template('investments/boudoir.html')
+  return abort(404)
+
   
-
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
   form = ContactForm()

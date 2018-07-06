@@ -1,0 +1,38 @@
+{% extends "investments/investments.html" %}
+
+{% block prices %}
+  <h1 class="display-4 text-center">Family Sessions</h1>
+
+  <img src="{{ url_for('static', filename='imgs/gallery/family/family12.jpg') }}" alt="" class="img-fluid">
+
+  <div class="prices">
+    <div class="package">
+        <h3>Basic Package | $100</h3>
+        <p>Up to 4 people included in this session. Each additional person is $10. This session runs up to 20 minutes of shooting and you will receive 7 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire.</p>
+    </div>
+    <div class="package">
+        <h3>Standard Package | $175</h3>
+        <p>Up to 4 people included in this session. Each additional person is $10. This session runs up to 30 minutes of shooting and you will receive 15 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. </p>
+    </div>
+    <div class="package">
+        <h3>Premium Package | $225</h3>
+        <p>Up to 5 People included in this session. Each additional person is $10. This session runs up to 45 minutes of shooting and you will receive 30 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive 2-5x7’s and an 8x11 photo of your choosing. These prints will be printing from a professional lab that my monitor is calibrated to, to ensure proper colorization. You will receive a print release to print your own photos as well. Additionally, all of your photos will be placed on a thumb drive for keepsake.</p>
+    </div>
+    <div class="package">
+        <h3>Deluxe Package | $300</h3>
+        <p>Up to 6 People included in this session. Each additional person is $10. This session runs up to 1 hour of shooting and you will receive 45 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive 4-5x7’s and 2- 8x11 photos of your choosing. These prints will be printing from a professional lab that my monitor is calibrated to, to ensure proper colorization. You will receive a print release to print your own photos as well. Additionally, you will receive a thumb drive of all your photos for keepsake.</p>
+    </div>
+    <div class="package">
+        <h3>Custom Packages</h3>
+        <p>If you are working a minimal budget, I can work with you to create a package tailored to your needs.</p>
+    </div>
+
+    <div class="disclaimer">
+        <p class="text-center">
+            <small><strong>*Hair and Make-up services are available for any desired session for an additional $50.</strong></small>
+            <br>
+            <small><strong>*Locations 30+ miles outside of Cheyenne will be charged mileage fee’s @ $.75/mile*</strong></small>
+        </p>
+    </div>
+  </div>
+{% endblock %}

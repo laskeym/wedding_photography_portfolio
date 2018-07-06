@@ -1,0 +1,37 @@
+{% extends "investments/investments.html" %}
+
+{% block prices %}
+  <h1 class="display-4 text-center">Headshot Sessions</h1>
+
+  <img src="{{ url_for('static', filename='imgs/gallery/headshots/headshot02.jpg') }}" alt="" class="img-fluid">
+  <div class="prices">
+    <div class="package">
+        <h3>Basic Package | $100</h3>
+        <p>This includes up to 25 minutes of shooting at a location of your choice. One outfit is permitted for this shoot. You will receive 6 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. </p>
+    </div>
+    <div class="package">
+        <h3>Standard Package | $175</h3>
+        <p>TThis includes up to 45 minutes of shooting at a location of your choice. two outfits are permitted for this shoot. You will receive 15 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. </p>
+    </div>
+    <div class="package">
+        <h3>Premium Package | $225</h3>
+        <p>This includes up to 1.5 hours of shooting at a location of your choice. Three outfits are permitted for this shoot. You will receive 30 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire.</p>
+    </div>
+    <div class="package">
+        <h3>Deluxe Package | $290</h3>
+        <p>This includes up to 1.5 hours of shooting at 2 locations of your choice. Three outfits are permitted for this shoot. You will receive 40 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. This package includes a Professional hair & Make up appointment before the shoot.</p>
+    </div>
+    <div class="package">
+        <h3>Custom Packages</h3>
+        <p>If you are working a minimal budget, I can work with you to create a package tailored to your needs.</p>
+    </div>
+
+    <div class="disclaimer">
+        <p class="text-center">
+            <small><strong>*Hair and Make-up services are available for any desired session for an additional $50.</strong></small>
+            <br>
+            <small><strong>*Locations 30+ miles outside of Cheyenne will be charged mileage fee’s @ $.75/mile*</strong></small>
+        </p>
+    </div>
+  </div>
+{% endblock %}

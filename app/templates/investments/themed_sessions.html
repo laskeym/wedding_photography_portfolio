@@ -1,0 +1,50 @@
+{% extends "investments/investments.html" %}
+
+{% block prices %}
+  <h1 class="display-4 text-center">Cake Smash & Announcement</h1>
+
+  <img src="{{ url_for('static', filename='imgs/gallery/themed/themed03.jpg') }}" alt="" class="img-fluid">
+
+  <div class="prices">
+    <div class="themed-cake-smash">
+        <h2>Themed Cake Smash</h2>
+        <div class="package">
+            <h3>Basic Package | $125</h3>
+            <p>This includes up to 25 minutes of shooting at a location of your choice. You provide the cake from a bakery of your choice. One outfit is permitted for smashing. You will receive 10 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. </p>
+        </div>
+        <div class="package">
+            <h3>Standard Package | $200</h3>
+            <p>This includes up to 35 minutes of shooting at a location of your choice. You provide the cake from a bakery of your choice. One outfit is permitted for smashing. You will receive 20 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. In addition, you will receive an 8x10 print of your choosing. This will be printed from a professional lab that I work with to ensure proper colorization.</p>
+        </div>
+        <div class="package">
+            <h3>Premium Package | $345</h3>
+            <p>We will provide the cake, you choose the design.  We will provide a smashing outfit to fit the theme. An additional outfit is permitted for photos other than the smash. You will receive 35 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. In addition, you will receive  3-8x10 prints of your choosing. These will be printed from a professional lab that I work with to ensure proper colorization. You will also receive all of your images on a thumb drive for keepsake.</p>
+        </div>
+    </div>
+
+    <div class="themed-announcement">
+        <h2>Themed Announcement</h2>
+        <div class="package">
+            <h3>Basic Package | $25</h3>
+            <p>This includes up to 10 minutes of shooting and one final announcement shot. Each additional image is $15. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire</p>
+        </div>
+        <div class="package">
+            <h3>Standard Package | $100</h3>
+            <p>This includes up to 35 minutes of shooting and 8 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire</p>
+        </div>
+        <div class="package">
+            <h3>Custom Packages</h3>
+            <p>If you are working a minimal budget, I can work with you to create a package tailored to your needs.</p>
+        </div>
+    </div>
+    <div class="disclaimer">
+            <p class="text-center">
+                <small><strong>*Hair and make up services are available for any desired session for an additional $50.</strong></small>
+            
+                <br>
+                <small><strong>* Locations 30+ miles outside of Cheyenne will be charged milage fee's @ $.75/mile.</strong></small>
+            </p>
+    
+        </div>
+  </div>
+{% endblock %}

@@ -52,15 +52,22 @@
               <a href="{{ url_for('gallery', gallery_type='family') }}" class="dropdown-item">Family</a>
             </div>
           </li>
-          {% if request.path == '/pricing' %}
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('pricing') }}">Pricing <span class="sr-only">(current)</span></a>
-          </li>
+         {% if '/investments' in request.path %}
+          <li class="nav-item dropdown active">
           {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('pricing') }}">Pricing</a>
-          </li>
+          <li class="nav-item dropdown">
           {% endif %}
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">investments</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="{{ url_for('investments', inv_type='wedding') }}" class="dropdown-item">Wedding</a>
+              <a href="{{ url_for('investments', inv_type='themed') }}" class="dropdown-item">Cake Smash & Announcement</a>
+              <a href="{{ url_for('investments', inv_type='headshots') }}" class="dropdown-item">Seniors & Headshots</a>
+              <a href="{{ url_for('investments', inv_type='maternity') }}" class="dropdown-item">Maternity</a>
+              <a href="{{ url_for('investments', inv_type='birth') }}" class="dropdown-item">Fresh 48's & Birth</a>
+              <a href="{{ url_for('investments', inv_type='family') }}" class="dropdown-item">Family</a>
+              <a href="{{ url_for('investments', inv_type='boudoir') }}" class="dropdown-item">Boudoir</a>
+            </div>
+          </li>
           {% if request.path == '/contact' %}
           <li class="nav-item active">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact <span class="sr-only">(current)</span></a>

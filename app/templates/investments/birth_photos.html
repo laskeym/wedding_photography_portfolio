@@ -1,0 +1,66 @@
+{% extends "investments/investments.html" %}
+
+{% block prices %}
+  <h1 class="display-4 text-center">Fresh 48's & Birth Sessions</h1>
+
+  <img src="{{ url_for('static', filename='imgs/gallery/birth/birth09.jpg') }}" alt="" class="img-fluid">
+
+  <div class="prices">
+      <div class="fresh-48">
+          <h2>Fresh 48's</h2>
+          <div class="package">
+              <h3>Basic Package | $100</h3>
+              <p>This session runs up to 30 minutes of shooting and you will receive 8 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire.</p>
+          </div>
+          <div class="package">
+              <h3>Standard Package | $175</h3>
+              <p>This session runs up to 30 minutes of shooting and you will receive 8 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire.</p>
+          </div>
+          <div class="package">
+              <h3>Premium Package | $275</h3>
+              <p>This session runs up to 30 minutes of shooting and you will receive 8 edited digital images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire.</p>
+          </div>
+      </div>
+
+      <div class="birth">
+          <h2>Birthing</h2>
+          <div class="package">
+              <h3>Basic Package | $775</h3>
+              <p>This includes coverage from 6cm-Birth. We will also stay up to 2 hours after birth. We will be on call from 36 weeks-Delivery. You will receive 100 edited digital images.  Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. All of your photos will be placed on a thumb drive for keepsake. Additionally, you will receive 5-5x7 prints of your choice. These will be printed from a professional lab that I work with to ensure proper colorization.
+              <br>
+              <strong>*6 HOURS MAX</strong></p>
+          </div>
+          <div class="package">
+              <h3>Standard Package | $550</h3>
+              <p>This includes coverage from 7cm-Birth. We will also stay up to 1 hour after birth. We will be on call from 37 weeks-Delivery. You will receive 45 edited digital images.  Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. All of your photos will be placed on a thumb drive for keepsake.
+              <br>
+              <strong>*6 HOURS MAX</strong></p>
+          </div>
+      </div>
+      <div class="newborn">
+          <h2>Lifestyle Newborn Sessions</h2>
+          <div class="package">
+              <h3>Standard | $175</h3>
+              <p>This includes up to one hour of shooting. You will receive 15 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. Studio lighting will be provided as well as laminate flooring & other accessories.</p>
+          </div>
+          <div class="package">
+              <h3>Premium | $275</h3>
+              <p>This includes up to 2 hours of shooting. You will receive 30 edited digital Images. Your photos will be presented in an Online Gallery and you will be able to hand select your favorites. You will receive a print release to print with whatever company you desire. Studio lighting will be provided as well as laminate flooring & other accessories. All of your photos will be placed on a thumb drive for keepsake. Additionally, you will receive 2-5x7 photos and an 8x11 photo of your choosing. These prints will be printing from a professional lab that my monitor is calibrated to, to ensure proper colorization.</p>
+          </div>
+      </div>
+
+      <div class="package">
+          <h3>Custom Packages</h3>
+          <p>If you are working a minimal budget, I can work with you to create a package tailored to your needs.</p>
+      </div>
+      <div class="disclaimer">
+          <p class="text-center">
+              <small><strong>*Hair and Make-up services are available for any desired session for an additional $50.</strong></small>
+
+              <br>
+
+              <small><strong>*Locations 30+ miles outside of Cheyenne will be charged mileage fee’s @ $.75/mile*</strong></small>
+          </p>
+      </div>
+  </div>
+{% endblock %}
