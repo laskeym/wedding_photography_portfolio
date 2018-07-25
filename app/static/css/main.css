@@ -51,7 +51,7 @@ i.fas:hover {
 }
 
 #index-desc {
-  background-image: url("../imgs/bg_camera.jpg");
+  background-image: url("../imgs/bg_camera.png");
   background-position: 100% 0; /*Positioning*/
   background-repeat: no-repeat; /*Prevent showing multiple background images*/
   background-size: 300px 300px;
@@ -66,6 +66,6 @@ i.fas:hover {
   padding: 50px 0;
 }
 
-#testimonials img {
+/* #testimonials img {
   border-radius: 50%;
-}
+} */
