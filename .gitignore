@@ -1,3 +1,7 @@
 venv/
 .vscode/
 __pycache__
+lexispringer.sock
+lexispringer.ini
+wsgi.py
+log/

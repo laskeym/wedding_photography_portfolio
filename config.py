@@ -15,3 +15,9 @@ class Config(object):
   MAIL_USE_SSL = True
   MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
   MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+
+  print('*'*75)
+  print(SECRET_KEY)
+  print(MAIL_USERNAME)
+  print(MAIL_PASSWORD)
+  print('*'*75)
