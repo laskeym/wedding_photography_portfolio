@@ -8,33 +8,24 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   {% block head %}{% endblock %}
-  <title>Lexi Springer Photography</title>
+  <title>Alexis Springer Images</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="{{ url_for('index') }}">LexiSpringerPhotography</a>
+      <a class="navbar-brand" href="{{ url_for('index') }}">Alexis Springer Images</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav ml-auto">
-          {% if request.path == '/index' or request.path == '/' %}
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
-          </li>
-          {% endif %}
           {% if request.path == '/about' %}
           <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('about') }}">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ url_for('about') }}">About Me<span class="sr-only">(current)</span></a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About Me</a>
           </li>
           {% endif %}
           {% if '/gallery' in request.path %}
@@ -60,11 +51,14 @@
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">investments</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a href="{{ url_for('investments', inv_type='wedding') }}" class="dropdown-item">Wedding</a>
-              <a href="{{ url_for('investments', inv_type='themed') }}" class="dropdown-item">Cake Smash & Announcement</a>
-              <a href="{{ url_for('investments', inv_type='headshots') }}" class="dropdown-item">Seniors & Headshots</a>
-              <a href="{{ url_for('investments', inv_type='maternity') }}" class="dropdown-item">Maternity</a>
-              <a href="{{ url_for('investments', inv_type='birth') }}" class="dropdown-item">Fresh 48's & Birth</a>
               <a href="{{ url_for('investments', inv_type='family') }}" class="dropdown-item">Family</a>
+              <a href="{{ url_for('investments', inv_type='headshots') }}" class="dropdown-item">Headshots</a>
+              <a href="{{ url_for('investments', inv_type='maternity') }}" class="dropdown-item">Maternity</a>
+              <a href="#" class="dropdown-item">Lifestyle Newborn</a>
+              <a href="{{ url_for('investments', inv_type='birth') }}" class="dropdown-item">Births/Fresh 48's</a>
+              <a href="#" class="dropdown-item">Couples & Engagements</a>
+              <a href="{{ url_for('investments', inv_type='themed') }}" class="dropdown-item">Themed Sessions/Announement Shots</a>
+              <a href="{{ url_for('investments', inv_type='themed') }}" class="dropdown-item">Cake/Dessert Smashes</a>
               <a href="{{ url_for('investments', inv_type='boudoir') }}" class="dropdown-item">Boudoir</a>
             </div>
           </li>

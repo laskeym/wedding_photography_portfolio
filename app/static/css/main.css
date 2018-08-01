@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 1000;
 } 
 
 #index-lead-header h1 {
@@ -32,7 +32,7 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 1000;
 }
 
 i.fas {
@@ -51,21 +51,15 @@ i.fas:hover {
 }
 
 #index-desc {
-  background-image: url("../imgs/bg_camera.png");
-  background-position: 100% 0; /*Positioning*/
-  background-repeat: no-repeat; /*Prevent showing multiple background images*/
-  background-size: 300px 300px;
+  
+  padding: 50px 0;
 }
 
-#index-desc {
+/* #index-desc {
   height: 50vh;
-  padding: 100px 0;
-}
+  padding: 50px 0;
+} */
 
 #testimonials {
   padding: 50px 0;
 }
-
-/* #testimonials img {
-  border-radius: 50%;
-} */

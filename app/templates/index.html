@@ -10,8 +10,8 @@
 
 <div id="index-lead">
   <div id="index-lead-header">
-    <h1 class="display-4 text-center">Lexi Springer Photography</h1>
-    <p class="lead text-center">Creating ever lasting memories one shot at a time</p>
+    <h1 class="display-4 text-center">Alexis Springer Images</h1>
+    <p class="lead text-center">Creating ever lasting memories one photo at a time</p>
   </div>
   <div id="index-lead-next">
     <a href="#index-desc" id="scroll"><i class="fas fa-angle-double-down"></i></a>
@@ -37,7 +37,34 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid" id="index-desc">
+  <div class="row no-gutters">
+    <div class="col-md-4 my-auto text-center">
+      <h1>As Featured In:</h1>
+    </div>
+    <div class="col-md-8">
+      <div class="row no-gutters">
+        <div class="col-md-4 mx-auto">
+          <img src="{{ url_for('static', filename='imgs/featured_in/retrolife.png') }}" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-md-4 text-center">
+      <h2>As Featured In:</h2>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <img src="{{ url_for('static', filename='imgs/featured_in/retrolife.png') }}" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- <div class="container">
   <div id="index-desc">
     <div class="row" id="featured-in-header">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto text-center">
@@ -77,7 +104,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aspernatur consequatur quisquam dignissimos nisi cupiditate eveniet magni, numquam ullam rerum totam impedit laborum, sit, officiis velit sequi magnam nihil tempore explicabo suscipit. Exercitationem maxime atque eos, inventore dolor reprehenderit quia, adipisci ea, perferendis eum aliquid laudantium id? Accusantium, sequi? Voluptas delectus debitis numquam? Nesciunt, laudantium facere delectus neque dicta tempore.</p>
       </div>
       -->
-    </div>
+    <!--</div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <div class="text-center">
         <a class="widget" href="https://www.thumbtack.com/-Cheyenne-WY/service/3142152" target="_blank">
@@ -85,23 +112,24 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
-      <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
-      <h3>"Easy going and professional!"</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
-      <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
-      <h3>"Easy going and professional!"</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
-      <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
-      <h3>"Easy going and professional!"</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
+        <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
+        <h3>"Easy going and professional!"</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
+        <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
+        <h3>"Easy going and professional!"</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center my-3">
+        <img src="{{ url_for('static', filename='imgs/testimonial_user.png') }}" alt="" style="width: 200px;">
+        <h3>"Easy going and professional!"</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti error, deserunt atque veniam accusamus quia iure voluptate? Pariatur ipsa aliquam voluptas sapiente fugiat modi delectus molestiae eos repellat quae illum iste eveniet, dignissimos, accusantium nemo. Commodi culpa nisi delectus? Illum sint blanditiis molestiae iure quaerat voluptate, at vero ipsa, eum quis placeat laboriosam excepturi facere cumque atque nihil accusamus ab inventore perspiciatis temporibus quas!</p>
+      </div>
     </div>
   </div>
-</div>
+</div> -->
 
 {% endblock %}
 

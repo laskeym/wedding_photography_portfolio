@@ -3,36 +3,46 @@
 {% block body %}
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6 mx-auto">
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-            {% for message in messages %}
-              <div class="alert alert-success text-center">{{ message }}</div>
-            {% endfor %}
-          {% endif %}
-        {% endwith %}
-        <form action="#" method="POST">
-          {{ form.hidden_tag() }}
+      <div class="col-md-8">
+        <h1>Contact Us</h1>
+        <p class="lead">Book a session or simply ask a question</p>
 
-          <div class="form-group">
-            {{ form.first_name.label }}
-            {{ form.first_name(class='form-control') }}
-          </div>
-          <div class="form-group">
-            {{ form.last_name.label }}
-            {{ form.last_name(class='form-control') }}
-          </div>
-          <div class="form-group">
-            {{ form.email.label }}
-            {{ form.email(class='form-control') }}
-            <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            {{ form.date.label }}
-            {{ form.date(class='form-control') }}
-          </div>
-          {{ form.submit(class='btn btn-success btn-block') }}
-        </form>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                {{  form.first_name.label }}
+                {{ form.first_name(class='form-control')}}
+              </div>
+              <div class="form-group col-md-6">
+                {{ form.last_name.label }}
+                {{ form.last_name(class='form-control')  }}
+              </div>
+            </div>
+            <div class="form-group">
+              {{ form.email.label }}
+              {{ form.email(class='form-control')  }}
+            </div>
+            <div class="form-group">
+              {{ form.subject.label }}
+              {{ form.subject(class='form-control') }}
+            </div>
+            <div class="form-group">
+              {{ form.message.label }}
+              {{ form.message(class='form-control', rows=5) }}
+            </div>
+            {{ form.submit(class='btn btn-outline-primary') }}
+          </form>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Our Office</h5>
+        <address>
+          2039 Kettle Hill Court <br>
+          Warren Air Force Base, WY, 82001 <br>
+          United States
+        </address>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d750.9395718316279!2d-104.87347587227332!3d41.16162537928557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876f30ec684cdb3d%3A0xe2a5ad652b5d2c2b!2s2039+Kettle+Hill+Ct%2C+Francis+E.+Warren+AFB%2C+WY+82001!5e0!3m2!1sen!2sus!4v1533151900940" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </div>

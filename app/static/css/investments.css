@@ -1,7 +1,12 @@
 .img-fluid {
+  margin-bottom: 1.5rem !important;
   width: 100%;
 }
 
 .disclaimer {
   color: #000 !important;
+}
+
+.prices .package {
+  margin: 1.5rem 0 !important;
 }
